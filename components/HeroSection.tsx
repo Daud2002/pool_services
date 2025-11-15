@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div id="home" className="relative h-screen p-1 sm:p-2 md:p-4 lg:p-6 xl:p-8">
             <div className="absolute inset-1 sm:inset-2 md:inset-4 lg:inset-6 xl:inset-8 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl overflow-hidden shadow-2xl">
                 {/* navbar inside rounded container so corners are clipped */}
-                <div className="absolute top-0 left-0 w-full z-30">
+                <div className="absolute top-0 left-0 w-full z-[300]">
                     <Navbar />
                 </div>
 

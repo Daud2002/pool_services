@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent text-white py-4 sm:py-6 md:py-8 lg:py-12 z-50 border-b border-sky-400/30 backdrop-blur-sm relative">
+    <nav className="bg-transparent text-white py-8 sm:py-6 md:py-8 lg:py-12 z-50 border-b border-sky-400/30 backdrop-blur-sm relative">
       <div className="container mx-auto flex justify-center items-center relative px-4 sm:px-6">
         {/* logo on the left */}
         <div className="absolute left-4 sm:left-6 flex items-center z-50">
@@ -63,27 +64,42 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <div 
-        className={`lg:hidden absolute top-full left-0 right-0 bg-[#002D57]/98 backdrop-blur-xl border-b border-sky-400/30 transition-all duration-300 ease-in-out z-40 ${
-          isMobileMenuOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible'
-        }`}
-      >
-        <div className="container mx-auto px-4 sm:px-6 py-6">
-          <div className="flex flex-col space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={handleLinkClick}
-                className="text-white hover:text-sky-300 transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5 font-semibold text-base sm:text-lg border-b border-sky-400/10 last:border-0"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="lg:hidden absolute top-full left-0 right-0 bg-[#002D57]/98 backdrop-blur-xl border-b border-sky-400/30 shadow-2xl z-40 overflow-hidden"
+          >
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="container mx-auto px-4 sm:px-6 py-6"
+            >
+              <div className="flex flex-col space-y-4">
+                {navLinks.map((link, index) => (
+                  <motion.a
+                    key={link.href}
+                    href={link.href}
+                    onClick={handleLinkClick}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
+                    className="text-white hover:text-sky-300 transition-colors duration-300 py-3 px-4 rounded-lg hover:bg-white/5 font-semibold text-base sm:text-lg border-b border-sky-400/10 last:border-0"
+                  >
+                    {link.label}
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

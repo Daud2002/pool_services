@@ -1,6 +1,8 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const services = [
   {
@@ -83,18 +85,48 @@ const OurServices = () => {
       
       <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="flex flex-col items-center mb-12 sm:mb-16 md:mb-20">
-          <div className='flex flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4'>
+          <motion.div 
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className='flex flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4'
+          >
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-linear-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
               <img src="/assets/star.png" alt="" className='w-5 h-5 sm:w-6 sm:h-6'/>
             </div>
             <h2 className="text-sm sm:text-base font-bold text-sky-600 uppercase tracking-wider">Our Services</h2>
-          </div>
-          <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#002D57] mb-3 sm:mb-4 text-center">What We Offer</h3>
-          <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl text-center px-4">Comprehensive pool and landscape solutions tailored to your needs</p>
+          </motion.div>
+          <motion.h3 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#002D57] mb-3 sm:mb-4 text-center"
+          >
+            What We Offer
+          </motion.h3>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+            className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl text-center px-4"
+          >
+            Comprehensive pool and landscape solutions tailored to your needs
+          </motion.p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {services.map((service) => (
-            <ServiceCard key={service.title} {...service} />
+          {services.map((service, index) => (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+            >
+              <ServiceCard {...service} />
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { motion } from 'framer-motion';
 
 const faqs = [
   {
@@ -96,22 +97,46 @@ ${formData.message}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm shadow-lg text-sky-600 px-5 py-2.5 rounded-full text-sm font-semibold mb-6 border border-sky-200/50">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm shadow-lg text-sky-600 px-5 py-2.5 rounded-full text-sm font-semibold mb-6 border border-sky-200/50"
+          >
             <div className="w-2.5 h-2.5 bg-sky-500 rounded-full animate-pulse shadow-lg shadow-sky-500/50"></div>
             Get In Touch
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#002D57] mb-6 leading-tight">
+          </motion.div>
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#002D57] mb-6 leading-tight"
+          >
             Contact Us & <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-500 to-sky-600">FAQs</span>
-          </h2>
-          <p className="text-gray-700 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+            className="text-gray-700 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+          >
             Have questions? We're here to help. Send us a message or check our
             frequently asked questions below.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Contact Form Section */}
-          <div className="order-2 lg:order-1">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            className="order-2 lg:order-1"
+          >
             <div className="bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 border-2 border-sky-200/50 hover:border-sky-300/70 transition-all duration-500 hover:shadow-sky-200/50 group relative overflow-hidden">
               {/* Decorative gradient overlay */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-sky-100/40 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700"></div>
@@ -216,10 +241,16 @@ ${formData.message}
                 </form>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* FAQs Section */}
-          <div className="order-1 lg:order-2">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
+            className="order-1 lg:order-2"
+          >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/30 -rotate-3">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -266,7 +297,7 @@ ${formData.message}
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

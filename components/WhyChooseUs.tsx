@@ -1,6 +1,8 @@
 "use client";
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const stats = [
   {
@@ -101,30 +103,52 @@ const WhyChooseUs = () => {
           {/* Content Side */}
           <div className="order-1 lg:order-2">
             {/* Section Badge */}
-            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <motion.div 
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6"
+            >
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
               <h2 className="text-sm sm:text-base font-bold text-sky-600 uppercase tracking-wider">Why Choose Us</h2>
-            </div>
+            </motion.div>
 
             {/* Headline */}
-            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#002D57] mb-4 sm:mb-6 leading-tight">
+            <motion.h3 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#002D57] mb-4 sm:mb-6 leading-tight"
+            >
               Dubai&apos;s Most Trusted Pool Service Provider
-            </h3>
+            </motion.h3>
 
             {/* Paragraph */}
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-8 sm:mb-10 md:mb-12">
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-8 sm:mb-10 md:mb-12"
+            >
               With decades of expertise and thousands of satisfied customers, we&apos;ve established ourselves as the premier choice for pool services in Dubai. Our commitment to excellence, attention to detail, and customer satisfaction sets us apart in the industry.
-            </p>
+            </motion.p>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
               {stats.map((stat, index) => (
-                <div
+                <motion.div
                   key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1, ease: "easeOut" }}
                   className="group relative bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-sky-200 transform hover:-translate-y-1 overflow-hidden"
                 >
                   {/* Background Gradient Effect */}
@@ -151,9 +175,9 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
 
-                  {/* Decorative Element */}
+                  {/* Decorative Elements */}
                   <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-br from-sky-100/40 to-blue-100/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
