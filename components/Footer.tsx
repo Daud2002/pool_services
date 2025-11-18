@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-6">
               <h3 className="text-3xl md:text-4xl font-extrabold mb-3 text-white leading-tight tracking-tight">
-                Best Pool & <br/>
+                Best Pool <br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-sky-400 to-blue-400">
                   Technical Services
                 </span>
@@ -313,7 +313,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-sky-50/80 text-[15px] text-center md:text-left font-light">
-            © {new Date().getFullYear()} Best Pool & Technical Services. All rights reserved.
+            © {new Date().getFullYear()} Best Pool Technical Services. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-[15px] font-light">
             <Link
