@@ -8,7 +8,7 @@ const steps = [
     icon: '1',
     title: 'Book a Service',
     description: 'Schedule an appointment online in minutes.',
-    image: '/assets/about_1.jpg', // Replace with your image path
+    image: '/assets/random.jpeg', // Replace with your image path
   },
   {
     icon: '2',
@@ -26,7 +26,7 @@ const steps = [
     icon: '4',
     title: 'Ongoing Support',
     description: 'Enjoy peace of mind with our reliable support.',
-    image: '/assets/about_1.jpg', // Replace with your image path
+    image: '/assets/testimonial.jpg', // Replace with your image path
   },
 ];
 

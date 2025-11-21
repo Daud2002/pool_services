@@ -168,7 +168,7 @@ const Landscaping = () => {
                   Professional Landscaping Services
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  At Aquascapes Dubai, we specialize in creating stunning outdoor environments that perfectly
+                  At Best Pool Technical Services Dubai, we specialize in creating stunning outdoor environments that perfectly
                   blend beauty, functionality, and sustainability. Our expert team brings over 20 years of
                   experience in transforming ordinary spaces into extraordinary landscapes.
                 </p>
@@ -223,28 +223,28 @@ const Landscaping = () => {
         </div>
       </section>
 
-      {/* Engagement Section - Dark Blue Background */}
-      <section className="relative h-[40vh] bg-[#002D57] flex items-center justify-center overflow-hidden m-7 rounded-2xl">
+      <section className="relative h-[40vh] min-h-[300px] md:min-h-[400px] bg-[#002D57] flex items-center justify-center overflow-hidden m-4 sm:m-7 rounded-xl sm:rounded-2xl">
+        {/* Background Image */}
         <div className="absolute inset-0 opacity-10">
-          <Image
+          <img
             src="/assets/services_hero.jpg"
             alt="Background"
-            fill
-            className="object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 
+        {/* Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="relative z-10 container mx-auto px-4 pl-20"
+          className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 lg:pl-20"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">
             Ready to Transform Your Landscape?
           </h2>
-          <p className="text-lg md:text-xl text-sky-200 mb-8 max-w-3xl">
+          <p className="text-base sm:text-lg md:text-xl text-sky-200 mb-6 sm:mb-8 max-w-3xl">
             Let our expert team create the outdoor oasis you've always dreamed of.
             From design to installation, we handle everything with precision and care.
           </p>

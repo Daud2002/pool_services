@@ -55,13 +55,13 @@ const HeroSection = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-2">
                         <a 
-                            href="#services"
+                            href="/services/pool-construction"
                             className="w-full sm:w-auto bg-linear-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 md:px-10 rounded-full text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                         >
                             Discover More
                         </a>
                         <a 
-                            href="#contact"
+                            href="/contactUs"
                             className="w-full sm:w-auto bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 md:px-10 rounded-full text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                         >
                             Contact Us

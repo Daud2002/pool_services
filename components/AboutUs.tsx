@@ -44,7 +44,7 @@ const AboutUs = () => {
               className="absolute bottom-0 right-0 w-[50%] sm:w-[55%] h-[40%] sm:h-[45%] md:h-[50%] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white group ring-2 ring-sky-100"
             >
               <Image
-                src="/assets/about_1.jpg"
+                src="/assets/random.jpeg"
                 alt="Pristine swimming pool"
                 fill
                 className="object-cover transform transition-transform duration-700 group-hover:scale-110"

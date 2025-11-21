@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
               {/* Small Image - Top Right */}
               <div className="absolute -top-8 sm:-top-12 md:-top-16 -right-4 sm:-right-6 md:-right-10 w-[42%] sm:w-[45%] h-[28%] sm:h-[32%] rounded-2xl overflow-hidden shadow-xl group z-20">
                 <Image
-                  src="/assets/about_1.jpg"
+                  src="/assets/random.jpeg"
                   alt="Pool Construction"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"

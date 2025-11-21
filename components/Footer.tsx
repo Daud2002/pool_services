@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-6">
               <h3 className="text-3xl md:text-4xl font-extrabold mb-3 text-white leading-tight tracking-tight">
-                Best Pool <br/>
+                Best Pool <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-sky-400 to-blue-400">
                   Technical Services
                 </span>
@@ -101,7 +101,7 @@ const Footer = () => {
             <ul className="space-y-3.5">
               <li>
                 <Link
-                  href="#home"
+                  href="/"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
@@ -110,7 +110,16 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href="/landscaping"
+                  className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
+                >
+                  <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
+                  Landscape
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/aboutUs"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
@@ -119,25 +128,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#services"
-                  className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
-                >
-                  <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#testimonials"
-                  className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
-                >
-                  <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
+                  href="/contactUs"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
@@ -153,47 +144,74 @@ const Footer = () => {
             <ul className="space-y-3.5">
               <li>
                 <Link
-                  href="#"
+                  href="/services/pool-construction"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Pool Maintenance
+                  Swimming Pool Construction
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/pool-renovation"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Pool Installation
+                  Swimming Pool Renovation
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/pool-demolition"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Pool Repair
+                  Swimming Pool Demolition
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/pool-cleaning"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Pool Renovation
+                  Swimming Pool Cleaning
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/pool-maintenance"
                   className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
-                  Landscaping
+                  Swimming Pool Maintenance
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/pool-leak"
+                  className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
+                >
+                  <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
+                  Swimming Pool Leak Detection & Repair
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/pool-tile"
+                  className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
+                >
+                  <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
+                  Pool Tile Repair
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/pool-lighting"
+                  className="text-sky-50/90 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center gap-3 group text-[15px] font-light"
+                >
+                  <span className="w-2 h-2 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full group-hover:scale-125 transition-transform shadow-lg shadow-sky-400/50"></span>
+                  Swimming Pool Lighting Installation
                 </Link>
               </li>
             </ul>
@@ -203,7 +221,7 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-white tracking-tight">Contact Us</h4>
             <ul className="space-y-5">
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-sky-400/20 to-blue-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 border border-sky-400/10">
                   <svg
                     className="w-5 h-5 text-sky-300"
@@ -231,7 +249,7 @@ const Footer = () => {
                   </p>
                 </div>
               </li>
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-sky-400/20 to-blue-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 border border-sky-400/10">
                   <svg
                     className="w-5 h-5 text-sky-300"
@@ -256,7 +274,7 @@ const Footer = () => {
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-sky-400/20 to-blue-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 border border-sky-400/10">
                   <svg
                     className="w-5 h-5 text-sky-300"
@@ -274,14 +292,14 @@ const Footer = () => {
                 </div>
                 <div className="flex-1">
                   <a
-                    href="mailto:info@aquascapesdubai.com"
+                    href="mailto:bestpoolservice@gmail.com"
                     className="text-sky-50/90 hover:text-white transition-colors text-[15px] break-all font-light"
                   >
-                    info@bestpools.scom
+                    bestpoolservice@gmail.com
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-4 group">
+              <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-sky-400/20 to-blue-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300 border border-sky-400/10">
                   <svg
                     className="w-5 h-5 text-sky-300"
@@ -299,7 +317,10 @@ const Footer = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-sky-50/90 text-[15px] font-light">
-                    8:00 AM - 8:00 PM (Daily)
+                    7:00 AM - 5:00 PM (Mon-Sat)
+                  </p>
+                  <p>
+                    Sunday (Open for queries)
                   </p>
                 </div>
               </li>
@@ -317,22 +338,16 @@ const Footer = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-[15px] font-light">
             <Link
-              href="#"
+              href="/privacyPolicy"
               className="text-sky-50/80 hover:text-white transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-sky-400 after:to-blue-400 hover:after:w-full after:transition-all after:duration-300"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/termsOfUse"
               className="text-sky-50/80 hover:text-white transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-sky-400 after:to-blue-400 hover:after:w-full after:transition-all after:duration-300"
             >
               Terms of Service
-            </Link>
-            <Link
-              href="#"
-              className="text-sky-50/80 hover:text-white transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-sky-400 after:to-blue-400 hover:after:w-full after:transition-all after:duration-300"
-            >
-              Cookie Policy
             </Link>
           </div>
         </div>

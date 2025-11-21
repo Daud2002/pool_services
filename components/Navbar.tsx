@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { redirect } from 'next/navigation';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,10 +22,10 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "#about", label: "About Us" },
+    { href: "/aboutUs", label: "About Us" },
     { href: "#services", label: "Pool Service", hasDropdown: true },
     { href: "/landscaping", label: "Landscaping" },
-    { href: "#contact", label: "Contact" },
+    { href: "/contactUs", label: "Contact" },
   ];
 
   const handleLinkClick = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
     <nav className="bg-transparent text-white py-8 sm:py-6 md:py-8 lg:py-12 z-50 border-b border-sky-400/30 backdrop-blur-sm relative rounded-tr-2xl rounded-tl-2xl">
       <div className="container mx-auto flex justify-center items-center relative px-4 sm:px-6">
         {/* logo on the left */}
-        <div className="absolute left-4 sm:left-6 flex items-center z-50">
+        <div className="absolute left-4 sm:left-6 flex items-center z-50 cursor-pointer" onClick={()=>redirect("/")}>
           <Image 
             src="/assets/logo.png" 
             alt="Logo" 

@@ -21,7 +21,7 @@ const services = [
     title: 'Landscaping',
     description: 'Stunning landscape design to complement your pool and outdoor living space.',
     image: '/assets/landscape_service.jpeg',
-    href: '/services/landscaping',
+    href: '/landscaping',
   },
 ];
 

@@ -233,7 +233,7 @@ export const servicesData: Record<string, ServiceData> = {
     id: "pool-maintenance",
     slug: "pool-maintenance",
     title: "Pool Maintenance (Weekly / Monthly)",
-    titleImage: "/assets/cleaning/pool_cleaning_2.jpeg",
+    titleImage: "/assets/cleaning/pool_cleaning_5.jpeg",
     subtitle: "Regular Maintenance Plans",
     description: "",
     heroImage: "/assets/pool-maintenance-hero.jpg",
