@@ -267,7 +267,7 @@ const Footer = () => {
                 </div>
                 <div className="flex-1">
                   <a
-                    href={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}
+                    href={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.split(' ').join('')}
                     className="text-sky-50/90 hover:text-white transition-colors text-[15px] font-light"
                   >
                     {process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}

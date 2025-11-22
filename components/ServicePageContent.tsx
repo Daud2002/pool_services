@@ -437,7 +437,7 @@ export default function ServicePage({ service }: ServicePageProps) {
                   </div>
                   <div className='flex flex-row gap-3'>
                     <a
-                      href="/contact"
+                      href="/contactUs"
                       className="inline-block bg-white/10 backdrop-blur-md text-white font-bold py-4 px-8 sm:px-12 rounded-xl hover:bg-white/30 transition-all duration-300 text-lg transform hover:scale-105 shadow-l"
                     >
                       {service.cta.buttonText}

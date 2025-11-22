@@ -10,7 +10,7 @@ const WhatsappButton: React.FC<Props> = ({
   message = 'Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20pool%20services',
   className = '',
 }) => {
-  const phone = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const phone = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.split(' ').join('');
   const href = `https://wa.me/${phone}?text=${message}`;
 
   return (

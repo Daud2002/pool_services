@@ -40,7 +40,7 @@ ${formData.message}
         const encodedMessage = encodeURIComponent(message);
 
         // Create WhatsApp URL
-        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/${whatsappNumber?.split(" ").join("")}?text=${encodedMessage}`;
 
         // Open WhatsApp in new tab
         window.open(whatsappURL, '_blank');

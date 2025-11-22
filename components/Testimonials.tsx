@@ -179,16 +179,6 @@ const Testimonials = () => {
                   
                   {/* Header with Avatar and Info */}
                   <div className="flex items-start gap-4 mb-6 relative z-10">
-                    <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl overflow-hidden ring-4 ring-sky-100/50 shrink-0 group-hover:ring-sky-300 group-hover:scale-105 transition-all duration-300 shadow-lg">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        fill
-                        className="object-cover"
-                      />
-                      {/* Shine Effect on Profile Image */}
-                      <div className="absolute inset-0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out bg-linear-to-r from-transparent via-white/30 to-transparent"></div>
-                    </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-bold text-[#002D57] text-lg md:text-xl mb-1 group-hover:text-sky-600 transition-colors truncate">
                         {testimonial.name}

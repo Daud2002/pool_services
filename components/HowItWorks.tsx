@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { redirect } from 'next/navigation';
 
 const steps = [
   {
@@ -121,7 +122,7 @@ const HowItWorks = () => {
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed flex-grow">
                     {step.description}
                   </p>
-                  <div className="pt-3 sm:pt-4 border-t border-gray-100">
+                  <div className="pt-3 sm:pt-4 border-t border-gray-100 cursor-pointer" onClick={()=>redirect('/contactUs')}>
                     <div className="flex items-center text-sky-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       <span className="text-xs sm:text-sm">Get Started</span>
                       <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
