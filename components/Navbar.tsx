@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* logo on the left */}
         <div className="absolute left-4 sm:left-6 flex items-center z-50 cursor-pointer" onClick={()=>redirect("/")}>
           <Image 
-            src="/assets/logo.png" 
+            src="/logo.png" 
             alt="Logo" 
             width={50} 
             height={50} 
