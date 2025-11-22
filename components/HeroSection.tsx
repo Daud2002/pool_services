@@ -36,7 +36,7 @@ const HeroSection = () => {
                 <video
                     ref={videoRef}
                     className={`w-full h-full object-cover transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-                    src="/assets/hero_video.mp4"
+                    src="/assets/hero_video_1.mp4"
                     autoPlay
                     muted
                     playsInline
