@@ -292,10 +292,10 @@ const Footer = () => {
                 </div>
                 <div className="flex-1">
                   <a
-                    href="mailto:bestpoolservice@gmail.com"
+                    href="mailto:bstpoolservice@gmail.com"
                     className="text-sky-50/90 hover:text-white transition-colors text-[15px] break-all font-light"
                   >
-                    bestpoolservice@gmail.com
+                    bstpoolservice@gmail.com
                   </a>
                 </div>
               </li>

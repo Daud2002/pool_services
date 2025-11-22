@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
         },
         {
             title: "13. Contact Us",
-            content: "If you have questions about this Privacy Policy or our privacy practices, please contact us:\n\n📧 Email: bestpoolservice@gmail.com\n📞 Phone: +971502434772\n�� Address: Dubai, United Arab Emirates\n\nWe will respond to your inquiry within 7 business days."
+            content: "If you have questions about this Privacy Policy or our privacy practices, please contact us:\n\n📧 Email: bstpoolservice@gmail.com\n📞 Phone: +971502434772\n�� Address: Dubai, United Arab Emirates\n\nWe will respond to your inquiry within 7 business days."
         }
     ];
 
@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
                         </p>
                         <div className="space-y-3">
                             <p className="text-gray-700">
-                                <span className="font-semibold">Email:</span> bestpoolservice@gmail.com
+                                <span className="font-semibold">Email:</span> bstpoolservice@gmail.com
                             </p>
                             <p className="text-gray-700">
                                 <span className="font-semibold">Phone:</span> {process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}

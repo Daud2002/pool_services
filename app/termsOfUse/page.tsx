@@ -79,7 +79,7 @@ const TermsOfUse = () => {
         },
         {
             title: "19. Contact Information",
-            content: "For questions about these Terms of Use or any other matter, please contact us:\n\n📧 Email: bestpoolservice@gmail.com\n📞 Phone: +971502434772\n📍 Address: Dubai, United Arab Emirates\n\nWe will respond to your inquiry within 7 business days."
+            content: "For questions about these Terms of Use or any other matter, please contact us:\n\n📧 Email: bstpoolservice@gmail.com\n📞 Phone: +971502434772\n📍 Address: Dubai, United Arab Emirates\n\nWe will respond to your inquiry within 7 business days."
         }
     ];
 
@@ -197,7 +197,7 @@ const TermsOfUse = () => {
                         </p>
                         <div className="bg-sky-50 p-6 rounded-xl border border-sky-200">
                             <p className="text-gray-700 mb-3">
-                                <span className="font-semibold">Email:</span>bestpoolservice@gmail.com
+                                <span className="font-semibold">Email:</span>bstpoolservice@gmail.com
                             </p>
                             <p className="text-gray-700 mb-3">
                                 <span className="font-semibold">Phone:</span> {process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}
