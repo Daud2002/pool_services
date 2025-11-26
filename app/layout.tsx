@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Best Pools Technical Services CO.",
   icons: {
-    icon: "/water.svg",
-    shortcut: "/water.svg",
-    apple: "/water.svg",
+    icon: "/logos.png",
+    shortcut: "/logos.png",
+    apple: "/logos.png",
   },
 };
 
