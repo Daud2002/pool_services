@@ -15,24 +15,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://poolbestservice.com'),
   title: "Best Pools Technical Services CO.",
   description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
   icons: {
-    icon: "/logos.png",
-    shortcut: "/logos.png",
-    apple: "/logos.png",
+    icon: [
+      { url: "/logo.png" },
+      { url: "/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
     title: "Best Pools Technical Services CO.",
     description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
-    images: ["/logos.png"],
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Best Pools Technical Services CO.",
+      }
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Pools Technical Services CO.",
     description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
-    images: ["/logos.png"],
+    images: ["/logo.png"],
   },
 };
 
