@@ -19,13 +19,9 @@ export const metadata: Metadata = {
   title: "Best Pools Technical Services CO.",
   description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
   icons: {
-    icon: [
-      { url: "/logo.png" },
-      { url: "/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/logo.png", sizes: "16x16", type: "image/png" },
-    ],
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logos.png",
+    shortcut: "/logos.png",
+    apple: "/logos.png",
   },
   openGraph: {
     title: "Best Pools Technical Services CO.",
