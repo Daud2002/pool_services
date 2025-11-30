@@ -16,10 +16,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Best Pools Technical Services CO.",
+  description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
   icons: {
     icon: "/logos.png",
     shortcut: "/logos.png",
     apple: "/logos.png",
+  },
+  openGraph: {
+    title: "Best Pools Technical Services CO.",
+    description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
+    images: ["/logos.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Pools Technical Services CO.",
+    description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
+    images: ["/logos.png"],
   },
 };
 
