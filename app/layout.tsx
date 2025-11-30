@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "Professional pool services, landscaping, and technical solutions in Dubai. Expert pool construction, maintenance, cleaning, and renovation services.",
     images: [
       {
-        url: "/logos.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Best Pools Technical Services CO.",
